@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.geoff.dailyrecite.AutoSizeTextView
+        android:id="@+id/word_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:textSize="48sp"
+        android:text="N/A - TEXT" />
+
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0sp"
+	    android:layout_weight="1"
+	    android:padding="5sp" >
+	    <Button 
+	        android:id="@+id/covering_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:background="#f0f0f0"
+	        android:text="查看释义"
+	        />
+	    <TextView 
+		    android:id="@+id/word_meaning"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textSize="25sp"
+	        android:layout_margin="5sp"
+	        android:visibility="invisible"
+	        android:text="N/A - MEANING" />	    
+	</FrameLayout>
+	
+	<LinearLayout
+	    style ="?android:attr/buttonBarStyle"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10sp" >
+	    <Button
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:id="@+id/known_button"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	    	android:layout_height="wrap_content"
+	    	android:text="记得" />
+	    <Button
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:id="@+id/unknown_button"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	    	android:layout_height="wrap_content"
+	    	android:text="不记得" />
+	</LinearLayout>
+
+
+</LinearLayout>

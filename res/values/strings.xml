@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">备忘</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_list">SearchListActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_recite">ReciteActivity</string>
+    
+    <string name="key_word_hint">Any question?</string>
+    <string name="search_button">查询</string>
+    <string name="word_text_input_hint">Text</string>
+    <string name="word_meaning_input_hint">Meaning</string>
+
+</resources>

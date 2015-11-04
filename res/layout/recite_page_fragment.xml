@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:gravity="center" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="40sp"
+		android:text="今日已背" />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/search_page_button_bg" />
+        <TextView 
+            android:id="@+id/today_words_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text=" × 50" />
+    </LinearLayout>"
+    
+	<TextView 
+        android:id="@+id/total_words_textview"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text="共200个收录" />
+	<TextView 
+        android:id="@+id/unknown_words_textview"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text="剩余150个" />
+	<LinearLayout
+	    style ="?android:attr/buttonBarStyle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    <Button
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:id="@+id/recite_button"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="背诵" />
+	    <Button
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:id="@+id/watch_button"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="查看" />
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    <EditText 
+	  	    android:id="@+id/key_word"
+	  	    android:layout_width="0dp"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_weight="6"
+	  	    android:maxLines="1"
+	  	    android:hint="@string/key_word_hint"
+	  	    />		    	
+	  	<Button 
+	  	    android:id="@+id/search_button"
+	  	    android:layout_width="0dp"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_weight="2"
+	  	    android:text="@string/search_button"
+	  	    />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10sp" >
+	    <cn.geoff.dailyrecite.AutoSizeTextView
+	        android:id="@+id/word_text"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textSize="48sp"
+	        android:text="N/A - TEXT" />
+	    <Button 
+	        android:id="@+id/add_to_wordsbook_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:text="ADD" />
+	</LinearLayout>
+	<TextView 
+		    android:id="@+id/word_meaning"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textSize="25sp"
+	        android:layout_margin="5sp"
+	        android:text="N/A - MEANING" />
+
+</LinearLayout>
